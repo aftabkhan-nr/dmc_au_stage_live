@@ -1,0 +1,394 @@
+.home-intro 
+	background: #f3f3f3
+	box-sizing: border-box
+	.intro-image
+		float: right
+		position: relative
+		left: -65px
+		+at($small)
+			display: none
+	&:after 
+		display: block 
+		position: absolute
+		width: 100%
+		height: 19px
+		margin: 0 auto 
+		background-image: url("../img/arrow-down-light.png")
+		background-repeat: no-repeat
+		background-position: center top
+		content: ""
+	.contents 
+		padding: 4.3em 0 2.3em 0
+
+.title-with-logo
+	+clearfix
+	.title 
+		width: 70%
+		float: left 
+	.the-logo 
+		width: 30%
+		float: left
+		img 
+			position: relative
+			top: 20px
+			left: 15px
+
+.home-news 
+	padding-top: 3em
+.post-in-list
+	margin-top: 2.7em
+	height: 100%
+	margin-bottom: 2.2em
+.post-image 
+	width: 100%
+	height: 340px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center top
+	display: table
+	+at($small)
+		height: 180px
+	.play-icon 
+		display: table-cell
+		vertical-align: middle
+	img 
+		display: block
+		margin: 0 auto
+.post-info 
+	height: 100%
+	display: table
+	border-bottom: 1px solid #d9d9d9
+	+clearfix
+	+at($small)
+		display: block
+		height: auto
+.post-details
+	width: 80%
+	float: left
+	height: 100%
+	box-sizing: border-box
+	padding: 25px 30px 15px 30px
+	+at($small)
+		width: 100%
+		padding: 25px 0 15px 0
+	h4 
+		margin-top: 0
+		margin-bottom: 0.5em
+		font-size: 32px
+		//font-size: 40px
+		+at($small)
+			font-size: 24px
+		&:before
+			content: "["
+			margin-right: 15px
+		&:after
+			content: "]"
+			margin-left: 15px
+		&:before, &:after
+			color: $primary
+			position: relative
+			top: -2px
+.post-meta
+	width: 20%
+	float: left
+	+at($small)
+		float: left
+		width: 100%
+	height: 100%
+	padding: 40px 20px
+	box-sizing: border-box
+	background-color: #f3f3f3
+	text-align: center
+	+at($small)
+		padding: 20px 20px 5px 20px
+	p 
+		font-size: 12px
+		line-height: 1
+		margin-bottom: 0
+		color: #878787
+	strong 
+		text-transform: uppercase
+		margin-top: 10px
+		display: block
+	.date-posted
+		border-bottom: 1px solid #cfcfcf
+		padding-bottom: 35px
+		+at($small)
+			width: 35%
+			float: left
+			text-align: left
+			border-bottom: none
+			padding-top: 15px
+	.share-icon 
+		padding-top: 30px
+		position: relative
+		+at($small)
+			float: right
+			padding-top: 0
+			top: 0px
+		img
+			margin-bottom: 10px
+			opacity: 0.6
+			+animate(opacity, 400ms)
+		p 
+			+animate(color, 400ms)
+		&:hover 
+			cursor: pointer
+			p 
+				color: #545d62
+			img 
+				opacity: 1
+	.share-tip 
+		width: 183px
+		height: auto
+		+clearfix
+		background-color: #fff
+		position: absolute
+		box-sizing: border-box
+		padding: 15px 15px 5px 15px
+		display: block
+		opacity: 0
+		top: -60px
+		left: -50px
+		pointer-events: none
+		+at($small)
+			left: -134px
+			top: -80px
+		z-index: 99
+		border: 1px solid #e4e4e4
+		-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1)
+		box-shadow: 0 0 5px 0 rgba(0,0,0,0.1)
+		-webkit-transform: scale(0.7) translate(0, -55px)
+		-webkit-animation-direction: alternate
+		animation-direction: alternate
+		-webkit-transition: -webkit-transform 200ms ease-in-out, opacity 100ms ease-in-out
+		&:after, &:before
+			top: 100%
+			right: 46%
+			+at($small)
+				right: 8%
+			border: solid transparent
+			content: " "
+			height: 0
+			width: 0
+			position: absolute
+			pointer-events: none
+		&:before
+			border-color: rgba(228, 228, 228, 0)
+			border-top-color: #e4e4e4
+			border-width: 11px
+			margin-left: -11px
+		&:after 
+			border-color: rgba(255, 255, 255, 0)
+			border-top-color: #fff
+			border-width: 10px
+			margin-left: -10px
+		&.open-tip
+			opacity: 1
+			-webkit-transform: scale(1) translate(0, -73px)
+			pointer-events: auto
+			//width: 190px
+	.social-links
+		list-style: none 
+		margin: 0 
+		padding: 0
+		+clearfix
+		li 
+			margin: 0 
+			padding: 0
+			margin-bottom: 5px
+			display: block
+			width: 100%
+			+clearfix
+		&:last-child
+			margin-bottom: 0
+		a
+			color: #b2b2b2
+			font-size: 13px
+			display: block
+			float: left
+			position: relative
+			top: 4px
+			+animate(opacity, 400ms)
+			&:hover
+				opacity: 0.7
+		img 
+			float: left
+			margin: 0
+			position: relative
+			top: -8px
+.post-image
+	+animate(opacity, 400ms)
+	&:hover
+		cursor: pointer 
+		opacity: 0.8
+
+// hero panels
+.hero 
+	min-height: 560px
+	+at(720px)
+		min-height: 320px
+		padding: 100px 0 15px 0
+	overflow: hidden
+	background-color: #bfbfbf
+	padding: 160px 0 30px 0
+	background-size: cover
+	background-position: center top
+	background-repeat: no-repeat
+	h1
+		font-size: 60px
+		+at(720px)
+			font-size: 38px
+		line-height: 0.9
+		margin-bottom: 32px
+		span 
+			font-weight: 700
+			text-transform: uppercase
+			font-style: normal
+			color: $secondary
+	h1 
+		+clearfix
+		width: auto
+		display: inline-block 
+		position: relative
+		text-shadow: 0 0 10px rgba(0,0,0,0.2)
+		h1 
+			display: inline-block
+	h1:before, h1:after 
+		color: #b5b6b7
+		font-size: 140px
+		font-weight: 500
+		position: absolute
+		margin-top: -22px
+		+at(720px)
+			display: none
+	h1:before
+		content: "["
+		top: 0
+		left: -50px
+	h1:after
+		content: "]"
+		top: 0
+		right: -50px
+
+.wallabies-slide 
+	background-position: -70px 0
+
+#individual-product-hero h1 
+	text-shadow: none!important
+
+.can-slide 
+	+at($small)
+		background-position: -70px 0
+
+.no-center 
+	text-align: left
+
+.product-details
+	min-height: 128px
+
+.sponsor
+	position: absolute
+	right: 45px
+	bottom: 35px
+.slide 
+	min-height: 860px
+.short-hero 
+	min-height: 362px
+	+at(720px)
+		min-height: 0px
+		padding: 140px 0 20px 0
+#product-hero
+	background-image: url("../img/hero-products.jpg")
+	h1 
+		text-shadow: none
+#individual-product-hero
+	background-color: #f3f3f3
+	h1 
+		&:before, &:after 
+			display: none 
+		font-size: 30px
+	li 
+		font-weight: bold
+		@extend p
+
+.more-posts 
+	padding: 0 0 20px 0
+	h3 
+		margin-bottom: 30px
+	a 
+		+animate(opacity, 400ms)
+		&:hover 
+			opacity: 0.7
+
+#post-hero 
+	min-height: 360px
+
+
+
+#news-hero 
+	background-image: url("../img/stronger.jpg")
+	background-position: center 50%
+	//padding-top: 200px
+	min-height: 350px
+	h1:before, h1:after 
+		top: -11px
+#wallabies-hero 
+	background-image: url("../img/wallabies-page.jpg")
+	min-height: 462px
+	padding-top: 180px
+	padding-bottom: 80px
+	p
+		max-width: 400px
+		margin: 0 auto
+	h1:before, h1:after 
+		top: -11px
+.title-container
+	text-align: center
+	h1 
+		color: #fff
+		font-size: 38px
+		&:before, &:after 
+			color: $primary
+			font-size: 80px
+			margin-top: -13px
+			+at(720px)
+				display: none
+		&:before 
+			left: -30px
+		&:after 
+			right: -30px
+.product-image a
+	img 
+		+animate(opacity, 400ms)
+	&:hover 
+		img 
+			opacity: 0.8
+.products 
+	padding-top: 50px
+.product-details
+	padding: 0 5px
+.hero-product-shot 
+	position: absolute
+	height: 450px!important
+	width: 662px!important
+	left: -100px
+	top: -30px
+	
+.single-product-hero 
+	background-image: url("../img/product-shadow.png")	
+	background-position: 0 50%
+	background-repeat: no-repeat
+	padding: 30px 0
+	img 
+		display: block 
+		margin-left: 60px
+.product-intro
+	width: 100%
+	height: 450px
+	position: absolute
+	top: -20px
+	+at(720px)
+		display: none
+	img
+		max-width: none!important

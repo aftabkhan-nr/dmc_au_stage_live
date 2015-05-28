@@ -1,0 +1,158 @@
+// stacks
+$heading: ITCFranklinGothicStd-Demi, "Helvetica Neue", "Helvetica"
+$heading-medium: ITCFranklinGothicStd-Med, "Helvetica Neue", "Helvetica"
+$heading-light: ITCFranklinGothicStd-Book, "Helvetica Neue", "Helvetica"
+
+
+h1, h2, h3, h4, h5, h6, .subheader 
+	text-transform: uppercase
+	font-family: $heading
+	font-weight: 900
+	color: $copy
+
+h2, h3, h4, h5, h6 
+	font-family: $heading-medium
+
+h1
+	font-size: 45px
+	line-height: 1
+	+at($small)
+		font-size: 40px
+	span 
+		font-weight: 300
+		text-transform: none
+		color: $primary
+		font-style: italic
+		display: block
+h2
+	font-size: 64px
+	line-height: 1
+	+at($small)
+		font-size: 36px
+h3 
+	font-size: 25px
+	&.section-title 
+		border-bottom: 1px solid #d9d9d9
+		padding-bottom: 0.5em
+		img 
+			margin-right: 10px
+			position: relative
+			top: -2px
+h4
+	font-size: 40px
+	line-height: 1
+p 
+	font-size: 16px
+	font-weight: 400
+	color: $copy
+	font-family: $heading-light
+.site-heading 
+	+clearfix
+	width: auto
+	display: inline-block 
+	position: relative
+	margin-bottom: 2em
+	margin-top: 3em
+	+at($small)
+		margin-top: 0
+		margin-bottom: 50px
+	h1 
+		display: inline-block
+
+p.subheader 
+	font-weight: bold
+	font-style: italic
+	font-size: 20px
+	color: #484d53
+	margin-bottom: 30px
+	line-height: 1.6
+	text-transform: none
+.site-heading:before, .site-heading:after 
+	color: #dadadb
+	font-size: 120px
+	font-weight: 300
+	position: absolute
+	margin-top: -50px
+.site-heading:before
+	content: "["
+	top: 0
+	left: -40px
+.site-heading:after
+	content: "]"
+	top: 0
+	right: -40px
+.site-heading-container 
+	+at($small)
+		text-align: center
+
+.more-posts
+	h5
+		font-size: 22px
+		margin-top: 15px
+		border-bottom: 1px solid #d9d9d9
+		padding-bottom: 40px
+		margin-bottom: 20px
+		&:before
+			content: "["
+			margin-right: 7px
+		&:after
+			content: "]"
+			margin-left: 7px
+		&:before, &:after
+			color: $primary
+			position: relative
+			top: -2px
+			font-size: 20px
+
+.back-button 
+	font-size: 17px
+	border-bottom: 1px solid #cfcfcf
+	padding-bottom: 10px
+	margin-bottom: 15px
+	color: $primary
+	display: block
+	width: 70%
+	font-family: $heading
+	text-transform: uppercase
+	font-weight: bold
+	+animate(color, 400ms)
+	i 
+		font-size: 10px
+		position: relative
+		top: -2px
+		margin-right: 3px
+
+.product-in-list 
+	h4 
+		font-size: 18px
+		line-height: 1.1
+		margin-top: 10px
+	p 
+		font-size: 13px
+
+.white-text 
+	p 
+		font-weight: bold!important
+		color: #fff
+		text-shadow: 0 0 5px rgba(0,0,0,0.5)
+		
+.more-products
+	margin-top: 0
+	margin-bottom: 0.5em
+	font-size: 30px
+	text-align: center
+	position: relative
+	top: -25px
+	+at($small)
+		font-size: 18px
+	&:before
+		content: "["
+		margin-right: 15px
+	&:after
+		content: "]"
+		margin-left: 15px
+	&:before, &:after
+		color: $primary
+		position: relative
+		top: 5px
+		font-size: 50px

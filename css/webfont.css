@@ -1,0 +1,49 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3015783, 2015-04-26T23:45:16-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: ITCFranklinGothicStd-BookIt by ITC
+ * URL: http://www.myfonts.com/fonts/itc/franklin-gothic/std-book-italic/
+ * Copyright: Copyright &#x00A9; 1995, 2001 Adobe Systems Incorporated.  All Rights Reserved.
+ * 
+ * Webfont: ITCFranklinGothicStd-Med by ITC
+ * URL: http://www.myfonts.com/fonts/itc/franklin-gothic/std-medium/
+ * Copyright: Copyright &#x00A9; 1995, 2002 Adobe Systems Incorporated.  All Rights Reserved.
+ * 
+ * Webfont: ITCFranklinGothicStd-Book by ITC
+ * URL: http://www.myfonts.com/fonts/itc/franklin-gothic/std-book/
+ * Copyright: Copyright &#x00A9; 1986, 1992, 1995, 2002 Adobe Systems Incorporated.  All Rights Reserved.
+ * 
+ * Webfont: ITCFranklinGothicStd-Demi by ITC
+ * URL: http://www.myfonts.com/fonts/itc/franklin-gothic/std-demi/
+ * Copyright: Copyright &#x00A9; 1986, 1992, 1995, 2001 Adobe Systems Incorporated.  All Rights Reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3015783
+ * Licensed pageviews: 250,000
+ * 
+ * © 2015 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2e0467");
+
+  
+@font-face {font-family: 'ITCFranklinGothicStd-BookIt';src: url('webfonts/2E0467_0_0.eot');src: url('webfonts/2E0467_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2E0467_0_0.woff2') format('woff2'),url('webfonts/2E0467_0_0.woff') format('woff'),url('webfonts/2E0467_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ITCFranklinGothicStd-Med';src: url('webfonts/2E0467_1_0.eot');src: url('webfonts/2E0467_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2E0467_1_0.woff2') format('woff2'),url('webfonts/2E0467_1_0.woff') format('woff'),url('webfonts/2E0467_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ITCFranklinGothicStd-Book';src: url('webfonts/2E0467_2_0.eot');src: url('webfonts/2E0467_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2E0467_2_0.woff2') format('woff2'),url('webfonts/2E0467_2_0.woff') format('woff'),url('webfonts/2E0467_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ITCFranklinGothicStd-Demi';src: url('webfonts/2E0467_3_0.eot');src: url('webfonts/2E0467_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2E0467_3_0.woff2') format('woff2'),url('webfonts/2E0467_3_0.woff') format('woff'),url('webfonts/2E0467_3_0.ttf') format('truetype');}
+ 

@@ -1,0 +1,27 @@
+.button.primary
+	background: none
+	text-transform: uppercase
+	outline: 2px solid $primary
+	color: $primary
+	font-weight: bold
+	font-size: 14px
+	+animate(background, 400ms)
+	+animate(color, 400ms)
+
+	&:hover 
+		background: $primary
+		color: #fff
+	&:after 
+		font-family: "FontAwesome"
+		content: "\f0da"
+		margin-left: 15px
+		font-weight: 300
+.button 
+	padding: 1em 5.3em 1em 5em
+	+at($small)
+		width: 100%
+		display: block
+		padding: 1em 0
+.button.full-width
+	width: 100%
+	display: block

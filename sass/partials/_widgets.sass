@@ -1,0 +1,280 @@
+iframe 
+	margin-bottom: 20px
+
+.slide 
+	background-color: #000
+	text-align: center
+	padding: 15em 0 12em 0
+	background-size: cover
+	background-position: center 0
+	background-repeat: no-repeat
+	+at($small)
+		padding: 6em 0 1em 0
+	h1, h2, h3, h4, p 
+		color: #fff
+	h2 
+		margin-bottom: 0.5em
+		font-family: $heading
+		font-size: 56px
+		text-shadow: 0 0 10px rgba(0,0,0,0.2)
+	p 
+		font-weight: 500
+		margin-bottom: 3em
+	.button.primary
+		outline: 2px solid #fff
+		color: #fff
+		+animate(background, 300ms)
+		+animate(color, 300ms)
+		&:hover
+			background: #fff
+			color: #2d2d2d
+
+.owl-carousel:after 
+	display: block 
+	position: absolute
+	width: 100%
+	height: 19px
+	margin: 0 auto 
+	background-image: url("../img/arrow-down.png")
+	background-repeat: no-repeat
+	background-position: center top
+	content: ""
+.owl-controls 
+	margin: 0!important
+.owl-buttons
+	position: absolute
+	top: 40%
+	width: 100%
+	+at($small)
+		display: none
+	.owl-next 
+		position: absolute
+		right: 39px
+	.owl-prev 
+		position: absolute
+		left: 39px
+	.owl-next, .owl-prev 
+		+animate(opacity, 400ms)
+		&:hover 
+			opacity: 0.5!important
+
+//pagination
+.news-pagination
+	list-style: none
+	margin: 0 0 20px 0
+	+at($small)
+		position: relative
+		top: -30px
+	li 
+		display: inline 
+		margin: 0
+		padding: 0
+		margin-right: 20px
+		text-transform: uppercase
+
+	a 
+		color: #6d7175
+		font-size: 14px
+		font-weight: 500
+		+animate(color, 400ms)
+		+at($small)
+			display: none
+		&:hover
+			color: lighten(#6d7175, 20%)
+			img 
+				opacity: 0.6
+		img 
+			+animate(opacity, 400ms)
+			position: relative
+			top: -1px
+	a.active-page 
+		color: $primary
+		pointer-events: none
+		&:hover
+			color: $primary
+	.page-prev 
+		margin-right: 40px
+		+at($small)
+			position: absolute
+			left: 10px
+		img 
+			margin-right: 7px
+	.page-next 
+		margin-left: 40px
+		+at($small)
+			position: absolute
+			right: 10px
+			text-align: right
+		img 
+			margin-left: 5px
+	.page-next, .page-prev 
+		font-style: italic
+		+at($small)
+			display: block!important
+			width: 50%
+
+// twitter
+.var-chromeless .tweet 
+	border-bottom: 1px solid #d1d2d4
+	padding: 25px 0!important
+
+// sidebar social links
+.social-sidebar 
+	border-bottom: 1px solid #e8e8e8
+	padding: 20px 0 10px 0
+	ul 
+		list-style: none
+		margin: 0
+		padding: 0
+	li 
+		margin: 0 0 23px 0
+		padding: 0
+	a 
+		color: $primary
+		text-transform: uppercase
+		font-family: $heading
+		font-weight: 700
+		font-size: 18px
+		+animate(color, 400ms)
+		&:hover 
+			color: lighten($primary, 6%)
+			img 
+				opacity: 0.75
+	img 
+		margin-right: 18px
+		+animate(opacity, 400ms)
+		position: relative
+		top: -1px
+.instagram-photos
+	padding: 30px 0
+	h5
+		margin-bottom: 30px
+	li
+		+animate(opacity, 400ms)
+		&:hover
+			opacity: 0.7
+
+.product-info, .available-at 
+	height: 100%
+	box-sizing: border-box
+	padding: 40px 40px
+.product-info 
+	background: #f3f3f3
+	display: table-cell
+	width: 65%
+	padding-right: 10px
+	+at(720px)
+		width: 100%
+		display: block
+		float: left
+		+clearfix
+.available-at
+	background: #fff
+	display: table-cell
+	width: 35%
+	vertical-align: top
+	padding-top: 60px
+	+at(720px)
+		width: 100%
+		display: block
+		float: left
+		+clearfix
+	h4 
+		font-size: 24px
+	.available-stores 
+		list-style: none
+		padding: 0
+		margin: 0
+		margin-top: 15px
+		li 
+			margin: 0
+			padding: 0
+			margin-bottom: 15px
+			+animate(opacity, 400ms)
+			&:hover 
+				opacity: 0.7
+			+at(720px)
+				display: inline-block
+.close-button
+	margin-bottom: 5px
+	text-align: right
+	font-size: 13px
+	a
+		color: #fff
+		text-transform: uppercase
+		+animate(opacity, 400ms)
+		&:hover
+			opacity: 0.7
+		i 
+			position: relative
+			top: 0px
+.modal-container 
+	position: fixed
+	background-color: rgba(0,0,0,0.7)
+	width: 100%
+	height: 100%
+	padding-bottom: 150px
+	top: 0 
+	left: 0 
+	z-index: 99
+	overflow-y: scroll
+	-webkit-overflow-scrolling: touch
+	display: none
+.modal
+	width: 95%
+	max-width: 720px
+	margin: 0 auto
+	margin-top: 150px
+	+clearfix
+.modal-contents 
+	min-height: 200px
+	background-color: #FFF
+	display: table
+	width: 100%
+	max-width: 720px
+	box-sizing: border-box
+	.product-image 
+		float: left
+		width: 35%
+		img 
+			max-width: 100%
+	.product-description
+		float: left
+		width: 65%
+		padding: 20px 10px 20px 20px
+		h4 
+			font-size: 24px
+		p, ul, li 
+			font-size: 13px
+		li 
+			font-weight: bold
+			@extend p
+
+.share-this-post
+	border-top: 1px solid #f4f4f4
+	padding-top: 13px
+	margin-top: 35px
+	margin-bottom: 35px
+	ul 
+		margin: 0
+		padding: 0
+		list-style: none
+	li 
+		margin: 0
+		padding: 0
+		display: inline-block
+		box-sizing: border-box
+		width: 32%
+		+animate(opacity, 400ms)
+		&:hover 
+			opacity: 0.7
+	a 
+		color: #b2b2b2
+		font-size: 12px
+	img 
+		margin-right: 5px
+
+.wake-up
+	width: 40%
+	margin: 0 auto
+	display: block
